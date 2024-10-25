@@ -1,0 +1,15 @@
+{
+    "sales_order": {
+        "column": {
+            "base_shipping_surcharge_amount": true,
+            "shipping_surcharge_amount": true
+        }
+    },
+    "quote_address": {
+        "column": {
+            "shipping_surcharge_amount": true,
+            "base_shipping_surcharge_amount": true,
+            "shipping_surcharge_label": true
+        }
+    }
+}
