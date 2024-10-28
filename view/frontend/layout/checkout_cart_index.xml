@@ -8,20 +8,9 @@
                     <item name="components" xsi:type="array">
                         <item name="block-totals" xsi:type="array">
                             <item name="children" xsi:type="array">
-                                <item name="customs_surcharge" xsi:type="array">
+                                <item name="shipstation_surcharge" xsi:type="array">
                                     <item name="component" xsi:type="string">RadWorks_ShipStationCarrierSurcharge/js/view/cart/totals/surcharge</item>
                                     <item name="sortOrder" xsi:type="string">30</item>
-                                </item>
-                            </item>
-                        </item>
-                        <item name="summary-block-config" xsi:type="array">
-                            <item name="children" xsi:type="array">
-                                <item name="shipping-rates-validation" xsi:type="array">
-                                    <item name="children" xsi:type="array">
-                                        <item name="shipstation-rates-validation" xsi:type="array">
-                                            <item name="component" xsi:type="string">RadWorks_ShipStationCarrierSurcharge/js/view/shipping-rates-validation/shipstation</item>
-                                        </item>
-                                    </item>
                                 </item>
                             </item>
                         </item>

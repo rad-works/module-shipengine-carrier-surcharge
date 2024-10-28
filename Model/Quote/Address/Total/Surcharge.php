@@ -55,13 +55,13 @@ class Surcharge extends AbstractTotal
         /** @var Address $address */
         $address = $shippingAssignment->getShipping()->getAddress();
         $serviceConfig = $this->getServiceConfig($quote, $shippingAssignment);
-        $baseSurchargeRate = $serviceConfig->getSubtotalAdjustmentRate() ?: 0;
+        $baseSurchargeRate = $serviceConfig?->getSubtotalAdjustmentRate() ?: 0;
         $baseSurchargeAmount = $baseSurchargeRate ? $total->getBaseTotalAmount('subtotal') * $baseSurchargeRate : 0;
         $surchargeAmount = $baseSurchargeAmount ? $this->priceCurrency->convert(
             $baseSurchargeAmount,
             $quote->getStore()
         ) : 0;
-        $address->setShippingSurchargeLabel($serviceConfig->getSubtotalAdjustmentLabel());
+        $address->setShippingSurchargeLabel($serviceConfig?->getSubtotalAdjustmentLabel());
         $address->setShippingSurchargeAmount($surchargeAmount);
         $address->setBaseShippingSurchargeAmount($baseSurchargeAmount);
         $total->setTotalAmount($this->getCode(), $surchargeAmount);
