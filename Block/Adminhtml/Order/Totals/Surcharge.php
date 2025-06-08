@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace RadWorks\ShipStationCarrierSurcharge\Block\Adminhtml\Order\Totals;
+namespace RadWorks\ShipEngineCarrierSurcharge\Block\Adminhtml\Order\Totals;
 
 use Magento\Sales\Block\Adminhtml\Totals;
 

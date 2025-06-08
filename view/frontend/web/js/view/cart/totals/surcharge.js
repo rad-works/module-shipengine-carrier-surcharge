@@ -9,7 +9,7 @@ define(
         "use strict";
         return Component.extend({
             defaults: {
-                template: 'RadWorks_ShipStationCarrierSurcharge/checkout/cart/totals/surcharge'
+                template: 'RadWorks_ShipEngineCarrierSurcharge/checkout/cart/totals/surcharge'
             },
 
             totals: quote.getTotals(),
@@ -39,7 +39,7 @@ define(
                     return false;
                 }
 
-                return totals.getSegment('shipstation_surcharge');
+                return totals.getSegment('shipengine_surcharge');
             }
         });
     }

@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace RadWorks\ShipStationCarrierSurcharge\Observer;
+namespace RadWorks\ShipEngineCarrierSurcharge\Observer;
 
 use Magento\Framework\Event\Observer;
 use Magento\Framework\Event\ObserverInterface;

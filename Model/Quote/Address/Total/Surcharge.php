@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace RadWorks\ShipStationCarrierSurcharge\Model\Quote\Address\Total;
+namespace RadWorks\ShipEngineCarrierSurcharge\Model\Quote\Address\Total;
 
 use Magento\Framework\Phrase;
 use Magento\Framework\Pricing\PriceCurrencyInterface;
@@ -10,13 +10,13 @@ use Magento\Quote\Model\Quote;
 use Magento\Quote\Model\Quote\Address;
 use Magento\Quote\Model\Quote\Address\Total;
 use Magento\Quote\Model\Quote\Address\Total\AbstractTotal;
-use RadWorks\ShipStationCarrier\Api\Data\Service\ConfigInterface as ServiceConfigInterface;
-use RadWorks\ShipStationCarrier\Api\ServiceProviderInterface;
-use RadWorks\ShipStationCarrier\Model\Carrier\ConfigInterface;
+use RadWorks\ShipEngineCarrier\Api\Data\Service\ConfigInterface as ServiceConfigInterface;
+use RadWorks\ShipEngineCarrier\Api\ServiceProviderInterface;
+use RadWorks\ShipEngineCarrier\Model\Carrier\ConfigInterface;
 
 class Surcharge extends AbstractTotal
 {
-    public const TOTAL_CODE = 'shipstation_surcharge';
+    public const TOTAL_CODE = 'shipengine_surcharge';
 
     /**
      * @var PriceCurrencyInterface $priceCurrency
@@ -118,7 +118,7 @@ class Surcharge extends AbstractTotal
         }
 
         foreach ($this->serviceProvider->getAllowedServices() as $service) {
-            if (ConfigInterface::CARRIER_CODE . '_' . $service->getCode() !== $shippingMethod) {
+            if (ConfigInterface::CARRIER_CODE . '_' . $service->getServiceCode() !== $shippingMethod) {
                 continue;
             }
 

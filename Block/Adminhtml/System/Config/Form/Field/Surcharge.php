@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace RadWorks\ShipStationCarrierSurcharge\Block\Adminhtml\System\Config\Form\Field;
+namespace RadWorks\ShipEngineCarrierSurcharge\Block\Adminhtml\System\Config\Form\Field;
 
-use RadWorks\ShipStationCarrier\Api\Data\Service\ConfigInterface;
-use RadWorks\ShipStationCarrier\Block\Adminhtml\System\Config\Form\Field\GenericFieldArray;
-use RadWorks\ShipStationCarrier\Block\Adminhtml\System\Config\Form\Field\Renderer\AllowedMethods;
+use RadWorks\ShipEngineCarrier\Api\Data\Service\ConfigInterface;
+use RadWorks\ShipEngineCarrier\Block\Adminhtml\System\Config\Form\Field\GenericFieldArray;
+use RadWorks\ShipEngineCarrier\Block\Adminhtml\System\Config\Form\Field\Renderer\AllowedMethods;
 use Magento\Framework\DataObject;
 use Magento\Framework\Exception\LocalizedException;
 

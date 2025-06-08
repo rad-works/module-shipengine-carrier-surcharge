@@ -1,11 +1,11 @@
 {
-  "name": "rad-works/module-shipstation-carrier-surcharge",
-  "version": "0.2.1",
+  "name": "rad-works/module-shipengine-carrier-surcharge",
+  "version": "0.3.1",
   "description": "",
   "type": "magento2-module",
   "require": {
     "php": "~8.1.0||~8.2.0||~8.3.0",
-    "rad-works/module-shipstation-carrier": "*"
+    "rad-works/module-shipengine-carrier": "*"
   },
   "license": [
     "OSL-3.0",
@@ -16,7 +16,7 @@
       "registration.php"
     ],
     "psr-4": {
-      "RadWorks\\ShipStationCarrierSurcharge\\": ""
+      "RadWorks\\ShipEngineCarrierSurcharge\\": ""
     }
   }
 }

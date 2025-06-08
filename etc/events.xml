@@ -2,7 +2,7 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
     <event name="sales_model_service_quote_submit_before">
-        <observer name="RadWorks_ShipStationCarrierSurcharge::add_total_surcharge_to_order"
-                  instance="RadWorks\ShipStationCarrierSurcharge\Observer\AddTotalSurchargeToOrder"/>
+        <observer name="RadWorks_ShipEngineCarrierSurcharge::add_total_surcharge_to_order"
+                  instance="RadWorks\ShipEngineCarrierSurcharge\Observer\AddTotalSurchargeToOrder"/>
     </event>
 </config>
