@@ -3,7 +3,7 @@
         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
         <section id="carriers">
-            <group id="shipengine_api">
+            <group id="shipengine">
                 <group id="fees">
                     <label>Additional Fees</label>
                     <field id="subtotal_surcharge" translate="label" type="text" sortOrder="10" showInDefault="1"
@@ -11,7 +11,7 @@
                         <label>Subtotal Surcharge</label>
                         <frontend_model>RadWorks\ShipEngineCarrierSurcharge\Block\Adminhtml\System\Config\Form\Field\Surcharge</frontend_model>
                         <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
-                        <config_path>carriers/shipengine_api/subtotal_surcharge</config_path>
+                        <config_path>carriers/shipengine/subtotal_surcharge</config_path>
                     </field>
                 </group>
             </group>
